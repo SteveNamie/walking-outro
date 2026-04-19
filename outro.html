@@ -17,7 +17,6 @@ body{
   font-family:Arial, Helvetica, sans-serif;
 }
 
-/* dark cinematic background */
 .bg{
   position:fixed;
   inset:0;
@@ -26,20 +25,23 @@ body{
   animation:bgFade 1.2s ease forwards;
 }
 
-/* centered image */
 .wrap{
   position:fixed;
   inset:0;
   display:flex;
   align-items:center;
   justify-content:center;
+  padding:4vh 4vw;
+  box-sizing:border-box;
   opacity:0;
   animation:mainFade 1.5s ease forwards;
 }
 
 .wrap img{
-  width:min(92vw, 1200px);
+  width:auto;
   height:auto;
+  max-width:92vw;
+  max-height:82vh;
   display:block;
 }
 
@@ -64,7 +66,7 @@ body{
   <div class="bg"></div>
 
   <div class="wrap">
-    <img src="./outro.png?v=2" alt="Walking Tour Outro">
+    <img src="./outro.png?v=4" alt="Walking Tour Outro">
   </div>
 </body>
 </html>
