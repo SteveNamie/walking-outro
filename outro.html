@@ -19,8 +19,17 @@ body{
 
 .bg{
   position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.78);
+  top:-10%;
+left:-10%;
+width:120%;
+height:120%;
+
+  background:radial-gradient(circle at center,
+    rgba(0,0,0,.72) 0%,
+    rgba(0,0,0,.82) 40%,
+    rgba(0,0,0,.92) 70%,
+    rgba(0,0,0,.98) 100%);
+
   opacity:0;
   animation:bgFade 1.2s ease forwards;
 }
